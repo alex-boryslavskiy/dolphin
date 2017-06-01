@@ -1,0 +1,95 @@
+@import "./../../sass-autoprefixer/scss/prefixes";
+@import "./../../../../themes/dg-theme/lib_assets/scss/mixins";
+@import "./../../css/dolphin-mixin";
+@import "./../../css/base_all";
+
+footer {
+    width: 100vw;
+    background-color: #248D9A;
+    height: 365px;
+    padding: 30px;
+    @include full-flex(row nowrap, space-around, flex-start);
+    .footer-item {
+        height: 100%;
+        color: #fff;
+    }
+    .mail_big, .phone_big {
+        @include full-flex(column nowrap, flex-start, center);
+        img {
+            margin-bottom: 20px;
+        }
+    }
+    .phone_big {
+        span {
+            margin-bottom: 10px;
+        }
+    }
+    .menu_social {
+        @include full-flex(column nowrap, space-between, center);
+        .menu {
+            @include full-flex(column nowrap, flex-start, center);
+            .menu-btn {
+                margin: 5px 0;
+                @include full-flex(row nowrap, center, center);
+                padding: 5px 10px;
+                text-transform: uppercase;
+                cursor: pointer;
+                color: #fff;
+                font-size: 18px;
+                position: relative;
+                &:before {
+                    border-left: 2px solid;
+                    border-bottom: 2px solid;
+                    border-color: transparent;
+                    bottom: -1px;
+                    left: -1px;
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    transition: .3s;
+                    opacity: 0;
+                }
+                &:after {
+                    top: -1px;
+                    right: -1px;
+                    border-right: 2px solid;
+                    border-top: 2px solid;
+                    border-color: transparent;
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    transition: .3s;
+                    opacity: 0;
+                }
+                &:hover {
+                    &:before, &:after {
+                        border-color: #fff;
+                        opacity: 1;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &.active {
+                    &:before, &:after {
+                        border-color: #fff;
+                        opacity: 1;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .social_block {
+            @include full-flex(row nowrap, space-between, flex-end);
+            a {
+                opacity: .8;
+                margin: 0 20px;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

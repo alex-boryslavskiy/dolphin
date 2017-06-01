@@ -1,0 +1,37 @@
+@import "./../sass-autoprefixer/scss/prefixes";
+@import "./../../../themes/dg-theme/lib_assets/scss/mixins";
+@import "dolphin-mixin";
+
+@-webkit-keyframes pulsate {
+    50% {
+        color: #fff;
+        text-shadow: 0 -1px rgba(0, 0, 0, .3), 0 0 5px #FFD, 0 0 8px #fff;
+    }
+}
+@keyframes pulsate {
+    50% {
+        color: #fff;
+        text-shadow: 0 -1px rgba(0, 0, 0, .3), 0 0 5px #FFD, 0 0 8px #fff;
+    }
+}
+
+@-webkit-keyframes block-animation-10 {
+    to {
+        -webkit-transform: translateY(10px);
+    }
+}
+@keyframes block-animation-10 {
+    to {
+        transform: translateY(10px);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    @include box-sizing(border-box);
+    transition: color .5s ease-out 0s, border-color .3s ease-out 0s, background-color .4s ease-out 0s;
+}
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,35 @@
+@import "./../../sass-autoprefixer/scss/prefixes";
+@import "./../../../../themes/dg-theme/lib_assets/scss/mixins";
+@import "./../../css/dolphin-mixin";
+@import "./../../css/base_all";
+
+#scrollup {
+    @include _animate(opacity);
+    background-color: #808080;
+    border: 1px solid #808080;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+    right: 15px;
+    opacity: .4;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    z-index: 999;
+    bottom: 46%;
+    @include flex-flow(row nowrap);
+    @include justify-content(center);
+    @include align-items(center);
+    &:hover {
+        opacity: 1;
+    }
+    &:focus, &:active, &:visited {
+        opacity: .4;
+    }
+    i {
+        color: #fff;
+        font-size: 4rem;
+        position: relative;
+        top: -4px;
+    }
+}

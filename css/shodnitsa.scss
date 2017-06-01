@@ -1,0 +1,75 @@
+@import "./../sass-autoprefixer/scss/prefixes";
+@import "./../../../themes/dg-theme/lib_assets/scss/mixins";
+@import "dolphin-mixin";
+@import "base_all";
+@import "./../modules/scrollup/scrollup";
+@import "./../modules/header/header";
+@import "./../modules/footer/footer";
+@import "variants";
+
+body {
+    width: 100vw;
+    height: 1400px;
+    @include vp-overflow-x(hidden);
+    p {
+        text-align: center;
+    }
+}
+
+#shodnitsa {
+    .content {
+        position: relative;
+        padding-top: 50px;
+        background: url('/img/truskavec/trusk_back.jpg') center no-repeat;
+        background-size: cover;
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, .9);
+        }
+        .main_cont {
+            position: relative;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1150px;
+            background-color: rgba(153, 153, 153, 0.3);
+            @include _flex(column nowrap, flex-start, stretch);
+            padding: 20px 0;
+            h1 {
+                padding-top: 30px;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            p {
+                text-align: left;
+                padding: 0 50px;
+                text-indent: 1.5em;
+            }
+            .fa-angle-down {
+                text-align: center;
+                font-size: 50px;
+            }
+            .chs_live {
+                margin: 20px 0 30px 0;
+                @include _flex(row nowrap, center, center);
+                .item {
+                    margin: 0 10px;
+                    background-color: rgba(138, 138, 138, 0.7);
+                    width: 160px;
+                    height: 40px;
+                    color: #262626;
+                    text-transform: uppercase;
+                    @include _flex(row nowrap, center, center);
+                    cursor: pointer;
+                    &:hover, &.active {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

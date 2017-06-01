@@ -1,0 +1,22 @@
+@mixin _animate($args...) {
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    transition-delay: 0ms;
+    transition-property: $args;
+}
+
+@mixin h2_hr() {
+    h2 {
+        text-align: center;
+        color: #5FB1BA;
+        text-transform: uppercase;
+        margin: 52px 0 3px 0;
+    }
+    hr {
+        width: 190px;
+        background-color: #5fb1ba;
+        height: 3px;
+        flex: 0 0 3px;
+        margin-bottom: 47px;
+    }
+}

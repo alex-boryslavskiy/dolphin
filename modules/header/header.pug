@@ -1,0 +1,136 @@
+header
+    .header_bg
+        .main_header
+            .dolphine_travel
+                .social_block
+                    a(href='https://vk.com/dolphin.travel')
+                        img(src='/img/social/vk.png' alt='Туристическое агенство "Dolphine Travel". Наша группа Вконтакте')
+                    a(href='https://www.instagram.com/dolphin_travel_ua/')
+                        img(src='/img/social/insta.png' alt='Туристическое агенство "Dolphine Travel". Наш Instagram аккаунт')
+                    a(href='')
+                        img(src='/img/social/facebook.png' alt='Туристическое агенство "Dolphine Travel". Наш Facebook')
+                .logo
+                    img(src='/img/DT-white.png' alt='Туристическое агенство "Dolphine Travel". Логотип')
+                .contacts_block
+                    #lang.item
+                        .icon.ua.inactive
+                            img(src='/img/contacts/ua.png' alt='Туристичне агенство "Dolphine Travel". Мова інтерфейсу - українська')
+                        .icon.ru
+                            img(src='/img/contacts/ru.png' alt='Туристическое агенство "Dolphine Travel". Язык интерфейса - русский')
+                    #email.item
+                        .our-mail
+                            span info@dolphin-travel.com.ua
+                        .icon.mail
+                            img(src='/img/contacts/mail.png' alt='Туристическое агенство "Dolphine Travel". Наша почта, e-mail')
+                    #phone.item
+                        .our-phone
+                            span +38-067-583-9-721
+                        .icon.phone
+                            img(src='/img/contacts/phone.png' alt='Туристическое агенство "Dolphine Travel". Наш телефон')
+            .menu
+                a#main.menu-btn(href="index.html") Главная
+                a#special.menu-btn(href="special.html") Спецпредложения
+                a#guide.menu-btn(href="guide.html") Путеводитель
+                #service.menu-btn Услуги
+                #contacts-main.menu-btn Контакты
+        #filter
+            .title-f Фильтр
+                i.fa.fa-angle-down(aria-hidden='true')
+            .wrapper
+                .f-item.choose_resort
+                    .title Выбор курорта
+                    .func.arr
+                        i.fa.fa-angle-right(aria-hidden='true')
+                .f-item.choose_appart
+                    .title Выбор жилья
+                    .func.arr
+                        i.fa.fa-angle-right(aria-hidden='true')
+                .num_people
+                    .f-item.adult
+                        .title Взрослых
+                        .func.num 2
+                    .f-item.kids
+                        .title Детей
+                        .func.num 2
+                .f-item.heal_needed
+                    .title.one(dl-check='one') Без лечения
+                    .func.check(dl-check='one')
+                        i.fa.fa-check(aria-hidden='true' dl-check='one')
+                    .title.two(dl-check='two') С лечением
+                    .func.check(dl-check='two')
+                        i.fa.fa-check(aria-hidden='true' dl-check='two')
+                .f-item.date_come
+                    .title Дата выезда
+                    .func.text С
+                    .date.from 28.25.2017
+                        i.fa.fa-calendar(aria-hidden='true')
+                    .func.text По
+                    .date.to 28.25.2017
+                        i.fa.fa-calendar(aria-hidden='true')
+                .f-item.class_val
+                    .title.one(dl-check='one')
+                        span VIP
+                        .stars_full
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                        .stars_empty.hidden
+                            i.fa.fa-star-o(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                    .func.check.active(dl-check='one')
+                        i.fa.fa-check(aria-hidden='true' dl-check='one')
+                    .title.two(dl-check='two')
+                        span Высокий
+                        .stars_full.hidden
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                        .stars_empty
+                            i.fa.fa-star-o(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                    .func.check(dl-check='two')
+                        i.fa.fa-check(aria-hidden='true' dl-check='two')
+                    .title.three(dl-check='three')
+                        span Средний +
+                        .stars_full.hidden
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                        .stars_empty
+                            i.fa.fa-star-o(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                    .func.check(dl-check='three')
+                        i.fa.fa-check(aria-hidden='true' dl-check='three')
+                    .title.four(dl-check='four')
+                        span Средний
+                        .stars_full.hidden
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                        .stars_empty
+                            i.fa.fa-star-o(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                    .func.check(dl-check='four')
+                        i.fa.fa-check(aria-hidden='true' dl-check='four')
+                    .title.five(dl-check='five')
+                        span Эконом
+                        .stars_full.hidden
+                            i.fa.fa-star(aria-hidden='true')
+                        .stars_empty
+                            i.fa.fa-star-o(aria-hidden='true')
+                    .func.check(dl-check='five')
+                        i.fa.fa-check(aria-hidden='true' dl-check='five')
+                .search_block
+                    input.title#search_query(type='text' name='search_query' value='Поиск...')
+                    .func.search
+                        i.fa.fa-search(aria-hidden='true')
+            .search_wrapper
+                .start_search Начать поиск

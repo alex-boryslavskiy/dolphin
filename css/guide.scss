@@ -1,0 +1,120 @@
+@import "./../sass-autoprefixer/scss/prefixes";
+@import "./../../../themes/dg-theme/lib_assets/scss/mixins";
+@import "dolphin-mixin";
+@import "base_all";
+@import "./../modules/scrollup/scrollup";
+@import "./../modules/header/header";
+@import "./../modules/footer/footer";
+
+body {
+    width: 100vw;
+    height: 1400px;
+    @include vp-overflow-x(hidden);
+    p {
+        text-align: center;
+    }
+}
+
+#guide {
+    .content {
+        padding-top: 50px;
+        background: url('/img/guide/guide_back.jpg') center no-repeat;
+        background-size: cover;
+        .main_cont {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1150px;
+            background-color: rgba(255, 255, 255, 0.5);
+            @include _flex(column nowrap, flex-start, stretch);
+            padding: 20px 0;
+            h1 {
+                padding-top: 30px;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            h2 {
+                text-align: left;
+                padding: 0 50px;
+                text-decoration: underline;
+                margin: 20px 0;
+                a {
+                    color: #4D4D4D;
+                }
+                &.active {
+                    a {
+                        color: #248D9A;
+                    }
+                }
+            }
+            #shod, #morshin, #trusk {
+                cursor: pointer;
+                a {
+                    &:hover {
+                        color: #4FA3AE;
+                        text-decoration: none;
+                    }
+                }
+            }
+            #morshin, #shod {
+                padding-top: 30px;
+            }
+            p {
+                text-align: left;
+                padding: 0 50px;
+                text-indent: 1.5em;
+            }
+            img {
+                padding: 0 50px;
+                width: 100%;
+                margin: 20px 0;
+            }
+            .chs_city {
+                margin: 20px 0 30px 0;
+                @include _flex(row nowrap, center, center);
+                .item {
+                    margin: 0 10px;
+                    background-color: rgba(138, 138, 138, 0.7);
+                    width: 160px;
+                    height: 40px;
+                    color: #262626;
+                    text-transform: uppercase;
+                    @include _flex(row nowrap, center, center);
+                    cursor: pointer;
+                    &:hover, &.active {
+                        color: $white;
+                    }
+                }
+            }
+            .var_live {
+                width: 100%;
+                background-color: rgba(138, 138, 138, 0.7);
+                @include _flex(column nowrap, flex-start, center);
+                padding: 20px 0;
+                h2, h3 {
+                    color: $white;
+                    padding: 0 50px;
+                }
+                h2 {
+                    text-decoration: none;
+                }
+                h3 {
+                    font-style: italic;
+                    margin-bottom: 30px;
+                }
+                .chs_live {
+                    margin-bottom: 20px;
+                    width: 200px;
+                    height: 40px;
+                    text-transform: uppercase;
+                    color: $white;
+                    @include _flex(row nowrap, center, center);
+                    border: 1px solid $white;
+                    border-radius: 25px;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

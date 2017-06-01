@@ -1,0 +1,22 @@
+.flx {
+  display: flex; }
+  .flx.row {
+    flex-direction: row; }
+  .flx.col {
+    flex-direction: column; }
+  .flx.j-end {
+    justify-content: flex-end; }
+  .flx.j-start {
+    justify-content: flex-start; }
+  .flx.j-between {
+    justify-content: space-between; }
+  .flx.ai_center {
+    align-items: center; }
+  .flx.ai_start {
+    align-items: flex-start; }
+  .flx.wrap {
+    flex-wrap: wrap; }
+  .flx.nowrap {
+    flex-wrap: nowrap; }
+  .flx.grow {
+    flex-grow: 1; }
