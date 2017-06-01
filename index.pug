@@ -79,16 +79,22 @@ html(lang='ru')
                             span Сок из ростков пшеницы
                             span Dr.R.Koval&#174;
                     .consult2
-                        h2
-                        p
+                        h2 Вы получите консультации от ведущих специалистов бальнеологических курортов Прикарпатья.
+                        p Для получения более детальной информации можете оставить свой контактный номер телефона, и менеджер в ближайшее время свяжеться с Вами.
                         .inputs
-                            input()
-                            input()
-                            input()
-                        textarea(name='' placeholder='' )
+                            input(type='text' name='name' value='' placeholder='Имя' required='required')
+                            input(type='tel' name='phone' value='' placeholder='+38 (___) - ___ - __ - __' required='required')
+                            input(type='email' name='email' value='' placeholder='E-mail' required='required')
+                        textarea(name='quest' placeholder='Задайте вопрос' required='required')
                         .checkboxes
-                            input(type='checkbox' name='sms' value='Получить ответ по SMS')
-                            input(type='checkbox' name='phone' value='Получить ответ по тел.')
+                            .sms
+                                input(type='checkbox' id='sms' name='check' value='sms')
+                                label(for='sms')
+                            span Получить ответ по SMS
+                            .phone_check
+                                input(type='checkbox' id='phone_check' name='check' value='phone_check')
+                                label(for='phone_check')
+                            span Получить ответ по тел.
                         .btn_send Отправить запрос
                     .popup_koval
                         .top
